@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aaliyah Junaid | Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Aaliyah Junaid, a Software Engineering student at Miva Open University and a working software engineer in Nigeria.">
+  <meta name="author" content="Aaliyah Junaid">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Applied before first paint so a saved dark theme doesn't flash light. -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    } catch (e) { /* storage blocked: fall back to the system theme */ }
+  </script>
+  <script src="js/main.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets/favicon.svg" alt="" width="36" height="36">
+        <span class="visually-hidden">Aaliyah Junaid, home</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button">
+        <span aria-hidden="true" class="theme-icon">◐</span>
+        <span class="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="welcome">Welcome to my portfolio</p>
+          <h1 id="hero-title">Hi, I’m Aaliyah Junaid.</h1>
+          <p class="lead">I design and build software, and I care about keeping it easy to maintain or update later. I’m studying Software Engineering at Miva Open University whilst also working as a software engineer.</p>
+          <p class="bio">Right now I lead the core engineering team at <a href="https://sendzz.io">Sendzz</a> and build the mobile app and backend for <a href="https://baands.io">Baands</a>, an AI-powered personal finance app. Away from code, I’m usually watching wildlife, crocheting, or learning to draw.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="projects.html">See my projects</a>
+            <a class="button button-secondary" href="about.html">More about me</a>
+          </div>
+        </div>
+
+        <figure class="hero-figure reveal">
+          <div class="portrait-wrap">
+            <img class="hero-portrait" src="assets/headshot.jpg" alt="Photo of Aaliyah Junaid smiling, wearing glasses and a gold head wrap." width="743" height="800">
+            <!-- A short voice greeting. The button controls it; the caption is its transcript. -->
+            <audio id="greeting" src="assets/hello.m4a" preload="metadata"></audio>
+            <button class="audio-button" type="button" aria-controls="greeting">
+              <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+              <span class="visually-hidden">Play my greeting</span>
+            </button>
+            <span class="tooltip" id="audio-tip" aria-hidden="true">Play my greeting</span>
+          </div>
+          <!-- Shown like a subtitle while the greeting plays; always available to screen readers. -->
+          <figcaption class="transcript"><span class="visually-hidden">Transcript of the greeting: </span>“Hi, I’m Aaliyah Junaid, nice to meet you.”</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="glance-title">
+      <div class="container">
+        <h2 id="glance-title" class="visually-hidden">At a glance</h2>
+        <dl class="glance">
+          <div class="glance-item">
+            <dt>Studying</dt>
+            <dd>BSc Software Engineering, Miva Open University</dd>
+          </div>
+          <div class="glance-item">
+            <dt>Working on</dt>
+            <dd>Sendzz and Baands</dd>
+          </div>
+          <div class="glance-item">
+            <dt>Based in</dt>
+            <dd>Nigeria</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="explore-title">
+      <div class="container">
+        <h2 id="explore-title">Have a look around</h2>
+        <ul class="explore-grid" role="list">
+          <li>
+            <a class="card explore-card" href="about.html">
+              <span class="explore-kicker">01</span>
+              <span class="explore-title">About me</span>
+              <span class="explore-text">My education, what I’m working towards, my skills, and what I get up to away from the screen.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card explore-card" href="projects.html">
+              <span class="explore-kicker">02</span>
+              <span class="explore-title">Projects</span>
+              <span class="explore-text">Apps and platforms I’ve built or contributed to, from personal finance to Bitcoin payments.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card explore-card" href="planner.html">
+              <span class="explore-kicker">03</span>
+              <span class="explore-title">Academic planner</span>
+              <span class="explore-text">How I keep on top of coursework. Add a task, tick it off when it’s done, and clear it away.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card explore-card" href="contact.html">
+              <span class="explore-kicker">04</span>
+              <span class="explore-title">Contact</span>
+              <span class="explore-text">Questions, ideas or work: send me a message.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Aaliyah Junaid</p>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

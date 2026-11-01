@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <title>Illustration of a digital medical record card with a medical cross</title>
+  <rect width="960" height="600" fill="#ede3d4"/>
+  <circle cx="160" cy="110" r="130" fill="#f4ece0"/>
+  <circle cx="820" cy="500" r="150" fill="#f4ece0"/>
+  <!-- record card -->
+  <rect x="230" y="120" width="500" height="360" rx="28" fill="#fbf6ee" stroke="#2f2029" stroke-width="6"/>
+  <rect x="230" y="120" width="500" height="70" rx="28" fill="#2f2029"/>
+  <rect x="230" y="160" width="500" height="30" fill="#2f2029"/>
+  <rect x="270" y="146" width="160" height="16" rx="8" fill="#f4ece0"/>
+  <!-- cross -->
+  <rect x="300" y="250" width="40" height="120" rx="8" fill="#a9472a"/>
+  <rect x="260" y="290" width="120" height="40" rx="8" fill="#a9472a"/>
+  <!-- lines of data -->
+  <rect x="430" y="240" width="250" height="16" rx="8" fill="#2f2029" opacity=".75"/>
+  <rect x="430" y="276" width="200" height="16" rx="8" fill="#6e5965" opacity=".5"/>
+  <rect x="430" y="312" width="230" height="16" rx="8" fill="#6e5965" opacity=".5"/>
+  <rect x="430" y="348" width="170" height="16" rx="8" fill="#6e5965" opacity=".5"/>
+  <rect x="430" y="400" width="110" height="36" rx="18" fill="#c98a12"/>
+</svg>

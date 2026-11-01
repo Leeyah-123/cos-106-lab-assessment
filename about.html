@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About me | Aaliyah Junaid</title>
+  <meta name="description" content="Aaliyah Junaid's education, career aspirations, technical skills, and hobbies and interests.">
+  <meta name="author" content="Aaliyah Junaid">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Applied before first paint so a saved dark theme doesn't flash light. -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    } catch (e) { /* storage blocked: fall back to the system theme */ }
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets/favicon.svg" alt="" width="36" height="36">
+        <span class="visually-hidden">Aaliyah Junaid, home</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button">
+        <span aria-hidden="true" class="theme-icon">◐</span>
+        <span class="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro" aria-labelledby="page-title">
+      <div class="container reveal">
+        <h1 id="page-title">About me</h1>
+        <p class="lead">Where I’ve studied, what I’m working towards, the tools I use and what I do for fun.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="container about-grid">
+        <div>
+          <h2 id="story-title">My story</h2>
+          <p>I like owning a problem from start to finish: working out what’s actually needed, designing how the pieces fit together, then building it and seeing it through.</p>
+          <p>Right now I lead the core engineering team at <a href="https://sendzz.io"><strong>Sendzz</strong></a>, where I look after the technical direction, the architecture and getting things shipped. I’m also currently working on <a href="https://baands.io"><strong>Baands</strong></a>, an AI-powered personal finance app, where I build the mobile app and everything behind it. Before that, I worked at <a href="https://evento.so"><strong>Evento</strong></a>, where I helped take the platform open source, and I’ve built systems for companies around the world.</p>
+        </div>
+
+        <aside class="card details-card" aria-labelledby="details-title">
+          <h2 id="details-title" class="h3">Student details</h2>
+          <dl class="details-list">
+            <div>
+              <dt>Name</dt>
+              <dd>Aaliyah Junaid</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:a.junaid8240@miva.edu.ng">a.junaid8240@miva.edu.ng</a></dd>
+            </div>
+            <div>
+              <dt>Department</dt>
+              <dd>Software Engineering</dd>
+            </div>
+            <div>
+              <dt>Matric number</dt>
+              <dd class="mono">2025/C/SENG/0881</dd>
+            </div>
+            <div>
+              <dt>Institution</dt>
+              <dd>Miva Open University</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title">Educational background</h2>
+        <div class="table-wrap" role="region" aria-labelledby="education-caption" tabindex="0">
+          <table class="data-table">
+            <caption id="education-caption">My qualifications, most recent first</caption>
+            <thead>
+              <tr>
+                <th scope="col">Qualification</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Year</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">BSc Software Engineering</th>
+                <td>Miva Open University</td>
+                <td>2025 – present</td>
+                <td><span class="status status-progress">In progress</span></td>
+              </tr>
+              <tr>
+                <th scope="row">BSc Computer Science</th>
+                <td>Northbridge College of Sciences, Kano</td>
+                <td>2024</td>
+                <td><span class="status status-done">Completed</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Diploma, Software Engineering</th>
+                <td>National Institute of Information Technology (NIIT), Kaduna</td>
+                <td>2023</td>
+                <td><span class="status status-done">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aside-link">I keep track of my coursework and deadlines in my <a href="planner.html">academic planner</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="aspirations-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="aspirations-title">Career aspirations</h2>
+          <p>I’ve cared about medicine for a long time. Earlier in my life I wanted to become a doctor, and that interest never really left. Eventually I want to move into medtech, so I can still contribute to healthcare by building technology that helps patients and the people who care for them. Working on Medical Identification, a records app now used in hospitals and laboratories, gave me a first taste of that.</p>
+          <p>I also want to do more 3D work. I’ve started experimenting with 3D on the web, and I’d like to get much better at building things people can explore, not just read.</p>
+          <p>Outside of work, I want to become a more active activist for the causes I care about: climate change, sustainability, pollution, wildlife, and so much more.</p>
+        </div>
+        <div>
+          <h2 id="experience-title">Experience</h2>
+          <ol class="timeline" role="list" aria-labelledby="experience-title">
+            <li>
+              <p class="timeline-date">Feb 2026 – present</p>
+              <h3>Mobile &amp; Backend Developer, <a href="https://baands.io">Baands</a></h3>
+              <p>Building the Expo app and the NestJS backend for an AI personal finance app.</p>
+            </li>
+            <li>
+              <p class="timeline-date">Jan 2026 – present</p>
+              <h3>Core Engineer &amp; Technical Team Lead, <a href="https://sendzz.io">Sendzz</a></h3>
+              <p>Leading the core engineering team on architecture and delivery.</p>
+            </li>
+            <li>
+              <p class="timeline-date">Jul 2025 – Apr 2026</p>
+              <h3>Full Stack Web3 Developer, <a href="https://evento.so">Evento</a></h3>
+              <p>Core web and mobile features and a non-custodial Lightning wallet.</p>
+            </li>
+            <li>
+              <p class="timeline-date">Oct 2023 – Nov 2024</p>
+              <h3>Golang/Blockchain Developer, Brainy Codelab</h3>
+              <p>Blockchain applications in Go, and reusable frontend components.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Technical skills</h2>
+        <p class="section-intro">The languages and tools I use most.</p>
+        <ul class="skills-grid" role="list">
+          <li class="card">
+            <h3>Languages</h3>
+            <ul class="tags" role="list"><li>TypeScript</li><li>JavaScript</li><li>Go</li><li>Rust</li><li>Python</li><li>HTML &amp; CSS</li></ul>
+          </li>
+          <li class="card">
+            <h3>Frontend</h3>
+            <ul class="tags" role="list"><li>React</li><li>Next.js</li><li>Vue</li><li>Tailwind CSS</li></ul>
+          </li>
+          <li class="card">
+            <h3>Backend</h3>
+            <ul class="tags" role="list"><li>NestJS</li><li>Node.js</li><li>Express</li><li>GraphQL</li></ul>
+          </li>
+          <li class="card">
+            <h3>Mobile</h3>
+            <ul class="tags" role="list"><li>React Native</li><li>Expo</li></ul>
+          </li>
+          <li class="card">
+            <h3>Databases</h3>
+            <ul class="tags" role="list"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li></ul>
+          </li>
+          <li class="card">
+            <h3>DevOps</h3>
+            <ul class="tags" role="list"><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>CI/CD</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="hobbies-title">
+      <div class="container">
+        <h2 id="hobbies-title">Hobbies and interests</h2>
+        <p class="section-intro">Lately I’ve been leaning into my creative side, alongside a lifelong love of animals.</p>
+        <ul class="hobby-grid" role="list">
+          <li class="card hobby">
+            <span class="hobby-icon" aria-hidden="true">🦎</span>
+            <h3>Wildlife</h3>
+            <p>I love learning about and watching wildlife: birds, reptiles, mammals, insects, spiders, and pretty much anything that crawls, flies, swims or breathes.</p>
+          </li>
+          <li class="card hobby">
+            <span class="hobby-icon" aria-hidden="true">🧶</span>
+            <h3>Crochet and knitting</h3>
+            <p>I’ve picked my yarn back up and I’m crocheting and knitting again.</p>
+          </li>
+          <li class="card hobby">
+            <span class="hobby-icon" aria-hidden="true">🎨</span>
+            <h3>Drawing, painting and animation</h3>
+            <p>I’m learning to draw, paint and animate, one sketchbook page at a time.</p>
+          </li>
+          <li class="card hobby">
+            <span class="hobby-icon" aria-hidden="true">✍️</span>
+            <h3>Writing</h3>
+            <p>I’m getting back into writing, mostly about code and animals.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Aaliyah Junaid</p>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
