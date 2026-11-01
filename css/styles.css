@@ -1043,21 +1043,6 @@ a:hover { text-decoration-thickness: 2px; }
 
 .footer-inner p { margin: 0; }
 
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 16px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-nav a {
-  display: inline-block;
-  padding: 4px 0;
-  color: var(--muted);
-}
-
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {
